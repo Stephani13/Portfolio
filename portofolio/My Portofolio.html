@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width:device-width">
         <title>Stephani Izquierdo</title>
+        <link rel="shortcut icon" type="img/jpg" href="img/img_2.jpg">
         <link rel="stylesheet" type="text/css" href="./css/my_portofolio.css">
     </head>
 
@@ -11,17 +12,19 @@
 
         <div class="container">
             <ul class="Navbar">
-                <a class="different-color" href="#Home">Home</a>
+                <a class="active" href="#Home">Home</a>
+                <a href="#Slideshow">Slideshow</a>
                 <a href="#About">About</a>
                 <a href="#Github">Github</a>
-                <a href="#Contact">Contact</a>
+                
+                <a onclick="openForm()" ondblclick="closeForm()" class = "contact">Contact</a>
             </ul>
         </div>
 
 
 
         <!--Home-->
-        <div id="home">
+        <div id="Home">
             <video controls autoplay muted loop id="Typing_Video">
                 <source src="./video/coding.mp4" >
             </video>
@@ -48,8 +51,81 @@
 
 
 
+        <!--Slideshow section-->
+
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+
+
+
+                    <div class="Slides fade">
+                        <img class="Slideshow_Images" src="img/img_3.JPG" alt="my picture">
+                        <div class="text" > I am a full-stack software developer,<br>
+                        trained in:<br>
+                        HTML,CSS, JavaScript,</div>
+                    </div>
+
+                    
+            
+                    <div class="Slides fade">
+                        <img class="Slideshow_Images" src="img/html.jpg" alt="coding picture">
+                    </div> 
+
+
+
+            
+                    <div class="Slides fade">
+                        <img class="Slideshow_Images" src="img/coding.jpg" alt="coding picture">
+                    </div> 
+
+
+                    <div class="Slides fade">
+                        <img class="Slideshow_Images" src="img/python.jpg" alt="coding picture">
+                    </div> 
+
+                    <div class="Slides fade">
+                        <img class="Slideshow_Images" src="img/databases.png" alt="coding picture">
+                    </div> 
+
+
+                    <div class="Slides fade">
+                        <img class="Slideshow_Images" src="img/img_1.jpg" alt="coding picture">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+
+                    </div> 
+
+
+                    <!--prev and next buttons-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+ 
+                </div>
+                <br>
+
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    
+                
+                
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
         <!--About-->
-        <div class="Row" id="Aabout">
+        <div class="Row" id="About">
             <div class="Column_2">
                 <img src="./img/about.jpg" alt="">
             </div>
@@ -92,31 +168,26 @@
 
 
         <!--Contact-->
-        <div class="Row" id="Contact">
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/izval.ty@gmail.com" method="POST" class="form-container">
+                    <h1>Contact</h1>
 
-
-        <div class="Column_2 Column_tall">
-            <img src="./img/contact.jpg" alt="Contact Image">
-        </div>
-
-            <div class="Column_1 Column_tall" >
-                <h1>Contact</h1>
-
-
-                <form action="" method="post">
-
-                    <label>Name:</label>
-                        <input type="text" placeholder="Enter Name Here">
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Enter your name here!" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Enter your phone number here!" name="phone">
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter your email address here!" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Enter your message here!" name="message">
+                    <br>
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                     
-                    <label>Email:</label>
-                        <input type="text" placeholder="Enter Email Here">
-                    
-                    <label> Message:</label>
-                        <input type="text" placeholder="Write your Messege Here">
-                        <input type="submit" value="Submit">
-
-                        
                 </form>
+
             </div>
         </div>
 
@@ -126,6 +197,9 @@
                 <p class="center"> &copy stephaniizquierdoportfolio.com &nbsp;|&nbsp;2021</p>
             </p>
         </footer>
+
+
+        <script src="js/portfolio.js"></script>
 
 
 
