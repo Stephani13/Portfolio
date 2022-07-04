@@ -25,7 +25,7 @@
 
         <!--Home-->
         <div id="Home">
-            <video controls autoplay muted loop id="Typing_Video">
+            <video autoplay muted loop id="Typing_Video">
                 <source src="./video/coding.mp4" >
             </video>
         </div>
@@ -63,7 +63,7 @@
                         <img class="Slideshow_Images" src="img/img_3.JPG" alt="my picture">
                         <div class="text" > I am a full-stack software developer,<br>
                         trained in:<br>
-                        HTML,CSS, JavaScript,</div>
+                        HTML, CSS, JavaScript, SQLite3, Python, Django, C# .Net Framework, AngularJS, and Node.js.</div>
                     </div>
 
                     
@@ -138,7 +138,7 @@
                     This is just the begining!!
                     <br>
                     <br> I'm a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s 
-                    Software Developer Bootcamp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQLite3, Python.
+                    Software Developer Bootcamp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQLite3, Python, Django, and C# .Net Framework.
                     <br>
                     <br>I am a full-stack developer and would love to work with you in your project.
                         <a href="#Contact">Contact</a> me below!
@@ -171,7 +171,7 @@
         <div id="Contact">
             <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
             <div class="form-popup" id="myForm">
-                <form action="https://formspree.io/izval.ty@gmail.com" method="POST" class="form-container">
+                <form action="https://formspree.io/f/xoqrkave" method="POST" class="form-container">
                     <h1>Contact</h1>
 
                     <label for="name"><b>Name</b></label>

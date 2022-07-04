@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 
@@ -23,7 +23,7 @@ h1{
     font-family: Optima;
     text-align: center;
     margin-top: 3%;
-    color: #fff;
+    color: rgb(78, 76, 76);
 }
 
 h1:hover{
@@ -369,8 +369,8 @@ video{
     bottom: 1.75vw;
     right: 1.75vw;
     width: 25vw;
-    background-color: #fff;
-    color: #000;
+    background-color: rgb(49, 48, 48);
+    color: rgb(243, 234, 234);
     border: solid black;
     cursor: pointer;
     animation: movePopup 5s;
@@ -426,7 +426,7 @@ button {
 
 button:hover, .form-container .btn:hover {
     color: rgb(17, 17, 17);
-    background-color: rgb(245, 243, 243);
+    background-color: rgb(2, 2, 2);
     transition-duration: 1s;
     -webkit-animation-duration: 1s;
     border-color: silver;
