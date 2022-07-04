@@ -10,7 +10,6 @@ body{
     letter-spacing: .2vw;
     font-family: Avant Garde, Helvetica;
     font-size: 1.5vw;
-    overflow: hidden;
     user-select: none;
 }
 
